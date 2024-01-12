@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "check_lists",
+  "info": {
+    "singularName": "check-list",
+    "pluralName": "check-lists",
+    "displayName": "CheckList"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "theme": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::theme.theme",
+      "inversedBy": "check_lists"
+    },
+    "check_list_sources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::check-list-source.check-list-source",
+      "mappedBy": "check_list"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "check_lists"
+    }
+  }
+}

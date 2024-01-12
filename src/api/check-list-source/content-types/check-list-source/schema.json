@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "check_list_sources",
+  "info": {
+    "singularName": "check-list-source",
+    "pluralName": "check-list-sources",
+    "displayName": "CheckListSource"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "file": {
+      "allowedTypes": [
+        "files",
+        "audios",
+        "videos",
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Книги",
+        "Подкасты (iTunes)",
+        "YouTube-каналы"
+      ]
+    },
+    "check_list": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::check-list.check-list",
+      "inversedBy": "check_list_sources"
+    }
+  }
+}

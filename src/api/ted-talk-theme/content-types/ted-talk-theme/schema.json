@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ted_talk_themes",
+  "info": {
+    "singularName": "ted-talk-theme",
+    "pluralName": "ted-talk-themes",
+    "displayName": "TedTalkTheme"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "ted_talks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ted-talk.ted-talk",
+      "mappedBy": "ted_talk_theme"
+    }
+  }
+}

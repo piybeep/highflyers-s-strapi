@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "themes",
+  "info": {
+    "singularName": "theme",
+    "pluralName": "themes",
+    "displayName": "CheckListTheme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+    "check_lists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::check-list.check-list",
+      "mappedBy": "theme"
+    }
+  }
+}

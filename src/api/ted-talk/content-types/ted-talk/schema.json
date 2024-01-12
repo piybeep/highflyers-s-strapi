@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ted_talks",
+  "info": {
+    "singularName": "ted-talk",
+    "pluralName": "ted-talks",
+    "displayName": "TedTalk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "source": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios"
+      ]
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "ted_talk"
+    },
+    "ted_talk_theme": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ted-talk-theme.ted-talk-theme",
+      "inversedBy": "ted_talks"
+    }
+  }
+}

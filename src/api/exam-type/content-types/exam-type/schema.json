@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exam_types",
+  "info": {
+    "singularName": "exam-type",
+    "pluralName": "exam-types",
+    "displayName": "ExamType"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "group": {
+      "type": "enumeration",
+      "enum": [
+        "Письменная часть",
+        "Устная часть"
+      ],
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "exams": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exam.exam",
+      "mappedBy": "exam_type"
+    }
+  }
+}
