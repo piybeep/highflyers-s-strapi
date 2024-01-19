@@ -964,12 +964,13 @@ export interface ApiLessonPlanLessonPlan extends Schema.CollectionType {
     singularName: 'lesson-plan';
     pluralName: 'lesson-plans';
     displayName: 'LessonPlan';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    level: Attribute.Enumeration<['\u04101', 'A2', 'B1', 'B2', 'C1', 'C2']> &
+    level: Attribute.Enumeration<['A1', 'A2', 'B1', 'B2', 'C1', 'C2']> &
       Attribute.Required;
     name: Attribute.String & Attribute.Required;
     time: Attribute.Integer & Attribute.Required;

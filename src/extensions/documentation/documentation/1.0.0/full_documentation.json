@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2024-01-11T17:36:10.996Z"
+    "x-generation-date": "2024-01-19T09:20:59.812Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3969,7 +3969,7 @@
                                                                 "level": {
                                                                   "type": "string",
                                                                   "enum": [
-                                                                    "А1",
+                                                                    "A1",
                                                                     "A2",
                                                                     "B1",
                                                                     "B2",
@@ -5929,7 +5929,7 @@
                                                   "level": {
                                                     "type": "string",
                                                     "enum": [
-                                                      "А1",
+                                                      "A1",
                                                       "A2",
                                                       "B1",
                                                       "B2",
@@ -9273,7 +9273,7 @@
               "level": {
                 "type": "string",
                 "enum": [
-                  "А1",
+                  "A1",
                   "A2",
                   "B1",
                   "B2",
@@ -9390,7 +9390,7 @@
           "level": {
             "type": "string",
             "enum": [
-              "А1",
+              "A1",
               "A2",
               "B1",
               "B2",
@@ -10396,7 +10396,7 @@
                                       "level": {
                                         "type": "string",
                                         "enum": [
-                                          "А1",
+                                          "A1",
                                           "A2",
                                           "B1",
                                           "B2",
@@ -16740,7 +16740,7 @@
                                                     "level": {
                                                       "type": "string",
                                                       "enum": [
-                                                        "А1",
+                                                        "A1",
                                                         "A2",
                                                         "B1",
                                                         "B2",

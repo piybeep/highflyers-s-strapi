@@ -4,7 +4,8 @@
   "info": {
     "singularName": "lesson-plan",
     "pluralName": "lesson-plans",
-    "displayName": "LessonPlan"
+    "displayName": "LessonPlan",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,7 +15,7 @@
     "level": {
       "type": "enumeration",
       "enum": [
-        "А1",
+        "A1",
         "A2",
         "B1",
         "B2",
@@ -36,23 +37,23 @@
       "required": true
     },
     "img": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "source": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "files",
         "videos",
         "audios",
         "images"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "users": {
       "type": "relation",
